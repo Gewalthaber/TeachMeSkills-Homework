@@ -11,7 +11,7 @@ class Sphere:
             self.center = (0.0, 0.0, 0.0)
         else:
             self.radius = float(radius)
-            self.center = (float(x), float(y), float(z))
+            self.center = (self.x, self.y, self.z)
 
     def get_volume(self):
         volume = (4 / 3) * pi * (self.radius ** 3)
